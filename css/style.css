@@ -1,0 +1,77 @@
+/*
+Author: Miguel Angarita;
+Version: 0.1;
+Theme: Ang Simple Blog
+
+*/
+.navbar {
+  border: 2px solid;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem; }
+
+.cont {
+  border: 2px solid; }
+
+nav .fa {
+  vertical-align: middle; }
+
+nav .navbar-nav .nav-item {
+  padding-right: 15px;
+  padding-left: 15px; }
+  nav .navbar-nav .nav-item a {
+    color: #fff !important; }
+  nav .navbar-nav .nav-item .active, nav .navbar-nav .nav-item a:hover {
+    color: #fd7e14 !important; }
+  nav .navbar-nav .nav-item .active {
+    border-bottom: 1px solid #fd7e14; }
+
+.jumbotron .social a {
+  color: #fff !important;
+  text-decoration: none !important; }
+
+.jumbotron .social a:hover {
+  color: #fd7e14 !important; }
+
+.brd {
+  border: 1px solid white; }
+
+.brd-black {
+  border: 1px solid black; }
+
+.card a {
+  text-decoration: none; }
+
+.card .post-title-border {
+  border-bottom: 1px solid;
+  padding: 0 10px 10px 10px;
+  border-color: #186578; }
+
+.pagination .active .page-link {
+  background-color: #186578 !important; }
+
+.pagination .page-link {
+  color: #186578; }
+
+.pagination .page-link:hover {
+  font-weight: bold; }
+
+.sidebar {
+  margin-bottom: 10px; }
+  .sidebar .list-group-item, .sidebar .card {
+    background-color: transparent !important;
+    border: 0; }
+  .sidebar .list-group-item {
+    color: white !important;
+    border-bottom: 1px dotted white; }
+  .sidebar .list-group-item:hover {
+    background-color: white !important;
+    color: #186578 !important;
+    font-weight: bold; }
+
+footer a {
+  color: white !important; }
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 100%;
+    max-width: none; } }
