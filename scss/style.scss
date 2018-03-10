@@ -5,7 +5,7 @@ $white: #fff;
 $border: 2px solid;
 /*
 Author: Miguel Angarita;
-Version: 0.1;
+Version: 0.1.1;
 Theme: Ang Simple Blog
 
 */
@@ -18,11 +18,12 @@ Theme: Ang Simple Blog
 	border: $border;
 }
 
+.navicon{
+	vertical-align: middle;
+	}
+
 nav{
 	
-	.fa{
-				vertical-align: middle;
-				}
 .navbar-nav{
 
 	.nav-item{
@@ -118,6 +119,43 @@ nav{
 footer{
 	a{
 		color: white !important;
+	}
+}
+
+.fa-bars{
+	color: $green !important;
+	font-size: 2rem;
+	vertical-align: middle;
+	&:hover, &:focus{
+		color: $orange !important;
+	}
+}
+
+.social{
+	a{
+		text-decoration: none;
+		color:$green;
+		&:hover,&:focus{
+			color:$orange;
+		}
+	}
+}
+
+.comments{
+	border-right:0; 
+	border-left:0;
+	border-top:0;
+}
+
+#commentBox{
+	.btn-primary{
+		background: $green !important;
+		&:hover,&:focus{
+			background: gray !important;
+		}
+	}
+	input:focus, textarea:focus{
+		border-color:$green;
 	}
 }
 @media screen and (max-width: 991px) {

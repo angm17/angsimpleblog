@@ -1,6 +1,6 @@
 /*
 Author: Miguel Angarita;
-Version: 0.1;
+Version: 0.1.1;
 Theme: Ang Simple Blog
 
 */
@@ -12,7 +12,7 @@ Theme: Ang Simple Blog
 .cont {
   border: 2px solid; }
 
-nav .fa {
+.navicon {
   vertical-align: middle; }
 
 nav .navbar-nav .nav-item {
@@ -70,6 +70,32 @@ nav .navbar-nav .nav-item {
 
 footer a {
   color: white !important; }
+
+.fa-bars {
+  color: #186578 !important;
+  font-size: 2rem;
+  vertical-align: middle; }
+  .fa-bars:hover, .fa-bars:focus {
+    color: #fd7e14 !important; }
+
+.social a {
+  text-decoration: none;
+  color: #186578; }
+  .social a:hover, .social a:focus {
+    color: #fd7e14; }
+
+.comments {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0; }
+
+#commentBox .btn-primary {
+  background: #186578 !important; }
+  #commentBox .btn-primary:hover, #commentBox .btn-primary:focus {
+    background: gray !important; }
+
+#commentBox input:focus, #commentBox textarea:focus {
+  border-color: #186578; }
 
 @media screen and (max-width: 991px) {
   .container {
