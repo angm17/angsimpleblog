@@ -18,23 +18,35 @@
                     </div>
                     <div class="col-md-3 text-center">
                             <div class="social d-inline-block">
-                                <a href="#" class="btn btn-link p-1" target="_blank">
-                                    <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
+                                <a href="#" class="btn btn-link p-0" target="_blank">
+                                    <span class="fa-stack fa-lg icon-facebook">
+                                      <i class="fa fa-square fa-stack-2x"></i>
+                                      <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                    </span>
                                 </a>
                             </div>
                             <div class="social d-inline-block">
-                                <a href="#" class="btn btn-link p-1" target="_blank">
-                                    <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                                <a href="#" class="btn btn-link p-0" target="_blank">
+                                    <span class="fa-stack fa-lg icon-twitter">
+                                      <i class="fa fa-square fa-stack-2x"></i>
+                                      <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </span>
                                 </a>
                             </div>
                             <div class="social d-inline-block">
-                                <a href="#" class="btn btn-link p-1" target="_blank">
-                                   <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                                <a href="#" class="btn btn-link p-0" target="_blank">
+                                   <span class="fa-stack fa-lg icon-instagram">
+                                      <i class="fa fa-square fa-stack-2x"></i>
+                                      <i class="fab fa-instagram fa-stack-1x"></i>
+                                    </span>
                                 </a>
                             </div>
                             <div class="social d-inline-block">
-                                <a href="#" class="btn btn-link p-1" target="_blank">
-                                    <i class="fab fa-youtube-square fa-2x" aria-hidden="true"></i>
+                                <a href="#" class="btn btn-link p-0" target="_blank">
+                                    <span class="fa-stack fa-lg icon-youtube">
+                                      <i class="fa fa-square fa-stack-2x"></i>
+                                      <i class="fab fa-youtube fa-stack-1x"></i>
+                                    </span>
                                 </a>
                             </div>
                     </div>   
@@ -44,7 +56,7 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-md bg-dark navbar-dark pr-0 container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i><a href="#" class="navbar-brand d-inline"> Ang Simple Blog Theme</a>
+                    <i class="fas fa-bars"></i><a href="#" class="navbar-brand d-inline"> Ang Simple Blog</a>
             </button>
               
                 <!-- <div class="container bg-dark text-white"> -->
@@ -93,18 +105,58 @@
                         </p>
 
                       </div>
-                        <div class="card-footer text-muted justify-content-between">
-                            <div class="d-inline">2 days ago by</div> <a href="#" class="btn btn-link">Miguel</a>
-                            <div class="social d-inline float-right">
-                                <span>Share on:</span>
-                                <a href="https://www.facebook.com/sharer.php?u=URL_HERE" class="p-1" target="_blank"><i class="fab fa-facebook-square fa-2x navicon" aria-hidden="true"></i></a>
-                                <a href="https://twitter.com/share?url=URL_HERE&amp;text=TEXT_BODY_HERE&amp;hashtags=HASHTAGS_HERE" class="p-1" target="_blank"><i class="fab fa-twitter-square fa-2x navicon" aria-hidden="true"></i></a>
-                                <a href="https://plus.google.com/share?url=URL_HERE" class="p-1"><i class="fab fa-google-plus fa-2x navicon" aria-hidden="true"></i></a>
-                                <a href="https://reddit.com/submit?url=URL_HERE&amp;title=TITLE_HERE" class="p-1" target="_blank"><i class="fab fa-reddit fa-2x navicon" aria-hidden="true"></i></a>
-                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=URL_HERE" class="p-1" target="_blank"><i class="fab fa-linkedin fa-2x navicon" aria-hidden="true"></i></a>
-                                <a href="http://www.tumblr.com/share/link?url=URL_HERE&amp;title=TITLE_HERE" class="p-1" target="_blank"><i class="fab fa-tumblr fa-2x navicon" aria-hidden="true"></i></a>
-                                <a href="mailto:" class="p-1" target="_blank"><i class="far fa-envelope fa-2x navicon" aria-hidden="true"></i></a>
+                        <div class="card-footer text-muted justify-content-between px-0 mx-0">
+                            <div class="row px-0 mx-0">
+                                <div class="col-lg-6 col-md-12">2 days ago by<a href="#" class="btn btn-link">Miguel</a></div>
+                                <div class="col-lg-6 col-md-12 socials d-inline-block">
+                                    <span>Share on:</span>
+                                    <a href="https://www.facebook.com/sharer.php?u=URL_HERE" class="p-1" target="_blank">
+                                        <span class="fa-stack fa-md icon-facebook navicon">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                        </span>
+                                    </a>
+                                    <a href="https://twitter.com/share?url=URL_HERE&amp;text=TEXT_BODY_HERE&amp;hashtags=HASHTAGS_HERE" class="p-1" target="_blank">
+                                        <span class="fa-stack fa-md icon-twitter navicon">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fab fa-twitter fa-stack-1x"></i>
+                                        </span>
+                                    </a>
+                                    <a href="https://plus.google.com/share?url=URL_HERE" class="p-1">
+                                        <!-- <i class="fab fa-google-plus fa-2x navicon" aria-hidden="true"></i> -->
+                                        <span class="fa-stack fa-md icon-googleplus navicon">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                                        </span>
+                                    </a>
+                                    <a href="https://reddit.com/submit?url=URL_HERE&amp;title=TITLE_HERE" class="p-1" target="_blank">
+                                        <span class="fa-stack fa-md icon-reddit navicon">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fab fa-reddit-alien fa-stack-1x"></i>
+                                        </span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=URL_HERE" class="p-1" target="_blank">
+                                        <span class="fa-stack fa-md icon-linkedin navicon">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                        </span>
+                                    </a>
+                                    <a href="http://www.tumblr.com/share/link?url=URL_HERE&amp;title=TITLE_HERE" class="p-1" target="_blank">
+                                        <span class="fa-stack fa-md icon-linkedin navicon">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fab fa-tumblr fa-stack-1x"></i>
+                                        </span>
+                                    </a>
+                                    <a href="mailto:" class="p-1" target="_blank">
+                                        <!-- <i class="far fa-envelope fa-2x navicon" aria-hidden="true"></i> -->
+                                        <span class="fa-stack fa-md icon-mail navicon">
+                                          <i class="fa fa-circle fa-stack-2x"></i>
+                                          <i class="fa fa-envelope fa-stack-1x"></i>
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
+                            
                             
                         </div>
                     </div>

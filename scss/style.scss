@@ -5,7 +5,7 @@ $white: #fff;
 $border: 2px solid;
 /*
 Author: Miguel Angarita;
-Version: 0.1.1;
+Version: 0.1.2;
 Theme: Ang Simple Blog
 
 */
@@ -20,46 +20,41 @@ Theme: Ang Simple Blog
 
 .navicon{
 	vertical-align: middle;
-	}
+}
 
 nav{
 	
-.navbar-nav{
+	.navbar-nav{
 
-	.nav-item{
-		padding-right: 15px;
-		padding-left: 15px;
+		.nav-item{
+			padding-right: 15px;
+			padding-left: 15px;
 
-		a{
-			color: $white !important;
+			a{
+				color: $white !important;
+			}
+
+			.active, a:hover
+			{
+				color: $hover-color !important;
+				
+			}
+
+			.active{
+				border-bottom: 1px solid $orange;
+			}			
+		
 		}
-
-		.active, a:hover
-		{
-			color: $hover-color !important;
-			
-		}
-
-		.active{
-			border-bottom: 1px solid $orange;
-		}			
-	
 	}
-}
 }
 
 .jumbotron{
 	.social{
-		a{
-	color: $white !important;
-	text-decoration: none !important;
-	}
+		.icon-instagram .fa-stack-1x, .icon-youtube .fa-stack-1x{
+			font-size: 2rem;
+		}
 
-	a:hover{
-		color: $hover-color !important;
 	}
-
-}
 
 }
 
@@ -131,12 +126,111 @@ footer{
 	}
 }
 
-.social{
+.socials{
+	font-size: 0.9rem;
 	a{
 		text-decoration: none;
-		color:$green;
-		&:hover,&:focus{
-			color:$orange;
+		padding: 0px !important;
+	}
+	
+}
+.icon-facebook {
+   color:#3b5998;
+   & .fa-stack-1x {
+	    color:white;
+	}
+	&:hover{
+		color:#fff;
+		& .fa-stack-1x {
+		    color:#3b5998;
+		}
+	}
+}
+.icon-twitter {
+    color:#00aced;
+    & .fa-stack-1x {
+	    color:white;
+	}
+	&:hover{
+		color:#fff;
+	    & .fa-stack-1x {
+		    color:#00aced;
+		}
+	}
+}
+.icon-youtube {
+    color:white;
+    & .fa-stack-1x {
+	    color:red;
+	}
+	&:hover{
+		color:red;
+	    & .fa-stack-1x {
+		    color:#fff;
+		}
+	}
+}
+.icon-instagram {
+    color:#fff;
+    & .fa-stack-1x {
+	    color:#000;
+	}
+	&:hover{
+		color:#000;
+	    & .fa-stack-1x {
+		    color:#fff;
+		}
+	}
+}
+
+.icon-googleplus {
+    color:#f00;
+    & .fa-stack-1x {
+	    color:#Fff;
+	}
+	&:hover{
+		color:#fff;
+	    & .fa-stack-1x {
+		    color:#f00;
+		}
+	}
+}
+
+.icon-reddit {
+    color:#F50;
+    & .fa-stack-1x {
+	    color:#Fff;
+	}
+	&:hover{
+		color:#fff;
+	    & .fa-stack-1x {
+		    color:#f50;
+		}
+	}
+}
+
+.icon-linkedin {
+    color:#05F;
+    & .fa-stack-1x {
+	    color:#Fff;
+	}
+	&:hover{
+		color:#fff;
+	    & .fa-stack-1x {
+		    color:#05F;
+		}
+	}
+}
+
+.icon-mail {
+    color:#000;
+    & .fa-stack-1x {
+	    color:#Fff;
+	}
+	&:hover{
+		color:#fff;
+	    & .fa-stack-1x {
+		    color:#000;
 		}
 	}
 }
@@ -158,9 +252,18 @@ footer{
 		border-color:$green;
 	}
 }
+
+
 @media screen and (max-width: 991px) {
+	body {
+	  	font-size: 0.8rem;
+	  }
+	.socials {
+		font-size: 0.7rem;
+	}
   .container {
     width: 100%;
     max-width: none;
   }
 }
+

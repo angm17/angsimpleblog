@@ -1,6 +1,6 @@
 /*
 Author: Miguel Angarita;
-Version: 0.1.1;
+Version: 0.1.2;
 Theme: Ang Simple Blog
 
 */
@@ -25,12 +25,8 @@ nav .navbar-nav .nav-item {
   nav .navbar-nav .nav-item .active {
     border-bottom: 1px solid #fd7e14; }
 
-.jumbotron .social a {
-  color: #fff !important;
-  text-decoration: none !important; }
-
-.jumbotron .social a:hover {
-  color: #fd7e14 !important; }
+.jumbotron .social .icon-instagram .fa-stack-1x, .jumbotron .social .icon-youtube .fa-stack-1x {
+  font-size: 2rem; }
 
 .brd {
   border: 1px solid white; }
@@ -78,11 +74,83 @@ footer a {
   .fa-bars:hover, .fa-bars:focus {
     color: #fd7e14 !important; }
 
-.social a {
-  text-decoration: none;
-  color: #186578; }
-  .social a:hover, .social a:focus {
-    color: #fd7e14; }
+.socials {
+  font-size: 0.9rem; }
+  .socials a {
+    text-decoration: none;
+    padding: 0px !important; }
+
+.icon-facebook {
+  color: #3b5998; }
+  .icon-facebook .fa-stack-1x {
+    color: white; }
+  .icon-facebook:hover {
+    color: #fff; }
+    .icon-facebook:hover .fa-stack-1x {
+      color: #3b5998; }
+
+.icon-twitter {
+  color: #00aced; }
+  .icon-twitter .fa-stack-1x {
+    color: white; }
+  .icon-twitter:hover {
+    color: #fff; }
+    .icon-twitter:hover .fa-stack-1x {
+      color: #00aced; }
+
+.icon-youtube {
+  color: white; }
+  .icon-youtube .fa-stack-1x {
+    color: red; }
+  .icon-youtube:hover {
+    color: red; }
+    .icon-youtube:hover .fa-stack-1x {
+      color: #fff; }
+
+.icon-instagram {
+  color: #fff; }
+  .icon-instagram .fa-stack-1x {
+    color: #000; }
+  .icon-instagram:hover {
+    color: #000; }
+    .icon-instagram:hover .fa-stack-1x {
+      color: #fff; }
+
+.icon-googleplus {
+  color: #f00; }
+  .icon-googleplus .fa-stack-1x {
+    color: #Fff; }
+  .icon-googleplus:hover {
+    color: #fff; }
+    .icon-googleplus:hover .fa-stack-1x {
+      color: #f00; }
+
+.icon-reddit {
+  color: #F50; }
+  .icon-reddit .fa-stack-1x {
+    color: #Fff; }
+  .icon-reddit:hover {
+    color: #fff; }
+    .icon-reddit:hover .fa-stack-1x {
+      color: #f50; }
+
+.icon-linkedin {
+  color: #05F; }
+  .icon-linkedin .fa-stack-1x {
+    color: #Fff; }
+  .icon-linkedin:hover {
+    color: #fff; }
+    .icon-linkedin:hover .fa-stack-1x {
+      color: #05F; }
+
+.icon-mail {
+  color: #000; }
+  .icon-mail .fa-stack-1x {
+    color: #Fff; }
+  .icon-mail:hover {
+    color: #fff; }
+    .icon-mail:hover .fa-stack-1x {
+      color: #000; }
 
 .comments {
   border-right: 0;
@@ -98,6 +166,10 @@ footer a {
   border-color: #186578; }
 
 @media screen and (max-width: 991px) {
+  body {
+    font-size: 0.8rem; }
+  .socials {
+    font-size: 0.7rem; }
   .container {
     width: 100%;
     max-width: none; } }
