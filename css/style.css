@@ -1,6 +1,6 @@
 /*
 Author: Miguel Angarita;
-Version: 0.1.2;
+Version: 0.1.3;
 Theme: Ang Simple Blog
 
 */
@@ -8,6 +8,22 @@ Theme: Ang Simple Blog
   border: 2px solid;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem; }
+
+.bg-success, .btn-success {
+  background: #186578 !important; }
+
+.btn-success:hover {
+  background: #10414e !important; }
+
+.text-success, .btn-outline-success {
+  color: #186578 !important; }
+
+.border-success, .btn-outline-success, .btn-success {
+  border-color: #186578 !important; }
+
+.btn-outline-success:hover {
+  background: #186578 !important;
+  color: #fff !important; }
 
 .cont {
   border: 2px solid; }
@@ -24,9 +40,6 @@ nav .navbar-nav .nav-item {
     color: #fd7e14 !important; }
   nav .navbar-nav .nav-item .active {
     border-bottom: 1px solid #fd7e14; }
-
-.jumbotron .social .icon-instagram .fa-stack-1x, .jumbotron .social .icon-youtube .fa-stack-1x {
-  font-size: 2rem; }
 
 .brd {
   border: 1px solid white; }
@@ -51,6 +64,14 @@ nav .navbar-nav .nav-item {
 .pagination .page-link:hover {
   font-weight: bold; }
 
+.pagination .page-item:first-child .page-link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.pagination .page-item:last-child .page-link {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
 .sidebar {
   margin-bottom: 10px; }
   .sidebar .list-group-item, .sidebar .card {
@@ -58,11 +79,15 @@ nav .navbar-nav .nav-item {
     border: 0; }
   .sidebar .list-group-item {
     color: white !important;
-    border-bottom: 1px dotted white; }
+    border-bottom: 1px dotted white;
+    border-radius: 0px; }
   .sidebar .list-group-item:hover {
     background-color: white !important;
     color: #186578 !important;
     font-weight: bold; }
+    .sidebar .list-group-item:hover .badge-pill {
+      color: #fff !important;
+      background: #186578 !important; }
 
 footer a {
   color: white !important; }
@@ -74,93 +99,103 @@ footer a {
   .fa-bars:hover, .fa-bars:focus {
     color: #fd7e14 !important; }
 
+.jumbotron .fa-stack-1x {
+  color: #000 !important;
+  font-size: 1.5rem; }
+
+.jumbotron .icon-instagram .fa-stack-1x, .jumbotron .icon-youtube .fa-stack-1x {
+  font-size: 2rem; }
+
+.jumbotron .icon-facebook, .jumbotron .icon-twitter, .jumbotron .icon-instagram, .jumbotron .icon-youtube {
+  color: #fff !important; }
+
+.jumbotron .icon-facebook:hover .fa-stack-1x {
+  color: #3b59ff !important; }
+
+.jumbotron .icon-twitter:hover .fa-stack-1x {
+  color: #00aced !important; }
+
+.jumbotron .icon-youtube:hover .fa-stack-1x {
+  color: #f00 !important; }
+
+.jumbotron .icon-instagram:hover .fa-stack-1x {
+  color: #f5f !important; }
+
 .socials {
   font-size: 0.9rem; }
   .socials a {
     text-decoration: none;
     padding: 0px !important; }
-
-.icon-facebook {
-  color: #3b5998; }
-  .icon-facebook .fa-stack-1x {
-    color: white; }
-  .icon-facebook:hover {
-    color: #fff; }
-    .icon-facebook:hover .fa-stack-1x {
-      color: #3b5998; }
-
-.icon-twitter {
-  color: #00aced; }
-  .icon-twitter .fa-stack-1x {
-    color: white; }
-  .icon-twitter:hover {
-    color: #fff; }
-    .icon-twitter:hover .fa-stack-1x {
-      color: #00aced; }
-
-.icon-youtube {
-  color: white; }
-  .icon-youtube .fa-stack-1x {
-    color: red; }
-  .icon-youtube:hover {
-    color: red; }
-    .icon-youtube:hover .fa-stack-1x {
+  .socials .icon-facebook {
+    color: #3b5998; }
+    .socials .icon-facebook .fa-stack-1x {
+      color: white; }
+    .socials .icon-facebook:hover {
       color: #fff; }
-
-.icon-instagram {
-  color: #fff; }
-  .icon-instagram .fa-stack-1x {
-    color: #000; }
-  .icon-instagram:hover {
-    color: #000; }
-    .icon-instagram:hover .fa-stack-1x {
+      .socials .icon-facebook:hover .fa-stack-1x {
+        color: #3b5998; }
+  .socials .icon-twitter {
+    color: #00aced; }
+    .socials .icon-twitter .fa-stack-1x {
+      color: white; }
+    .socials .icon-twitter:hover {
       color: #fff; }
-
-.icon-googleplus {
-  color: #f00; }
-  .icon-googleplus .fa-stack-1x {
-    color: #Fff; }
-  .icon-googleplus:hover {
+      .socials .icon-twitter:hover .fa-stack-1x {
+        color: #00aced; }
+  .socials .icon-youtube {
+    color: white; }
+    .socials .icon-youtube .fa-stack-1x {
+      color: red; }
+    .socials .icon-youtube:hover {
+      color: red; }
+      .socials .icon-youtube:hover .fa-stack-1x {
+        color: #fff; }
+  .socials .icon-instagram {
     color: #fff; }
-    .icon-googleplus:hover .fa-stack-1x {
-      color: #f00; }
-
-.icon-reddit {
-  color: #F50; }
-  .icon-reddit .fa-stack-1x {
-    color: #Fff; }
-  .icon-reddit:hover {
-    color: #fff; }
-    .icon-reddit:hover .fa-stack-1x {
-      color: #f50; }
-
-.icon-linkedin {
-  color: #05F; }
-  .icon-linkedin .fa-stack-1x {
-    color: #Fff; }
-  .icon-linkedin:hover {
-    color: #fff; }
-    .icon-linkedin:hover .fa-stack-1x {
-      color: #05F; }
-
-.icon-mail {
-  color: #000; }
-  .icon-mail .fa-stack-1x {
-    color: #Fff; }
-  .icon-mail:hover {
-    color: #fff; }
-    .icon-mail:hover .fa-stack-1x {
+    .socials .icon-instagram .fa-stack-1x {
       color: #000; }
+    .socials .icon-instagram:hover {
+      color: #000; }
+      .socials .icon-instagram:hover .fa-stack-1x {
+        color: #fff; }
+  .socials .icon-googleplus {
+    color: #f00; }
+    .socials .icon-googleplus .fa-stack-1x {
+      color: #Fff; }
+    .socials .icon-googleplus:hover {
+      color: #fff; }
+      .socials .icon-googleplus:hover .fa-stack-1x {
+        color: #f00; }
+  .socials .icon-reddit {
+    color: #F50; }
+    .socials .icon-reddit .fa-stack-1x {
+      color: #Fff; }
+    .socials .icon-reddit:hover {
+      color: #fff; }
+      .socials .icon-reddit:hover .fa-stack-1x {
+        color: #f50; }
+  .socials .icon-linkedin {
+    color: #05F; }
+    .socials .icon-linkedin .fa-stack-1x {
+      color: #Fff; }
+    .socials .icon-linkedin:hover {
+      color: #fff; }
+      .socials .icon-linkedin:hover .fa-stack-1x {
+        color: #05F; }
+  .socials .icon-mail {
+    color: #000; }
+    .socials .icon-mail .fa-stack-1x {
+      color: #Fff; }
+    .socials .icon-mail:hover {
+      color: #fff; }
+      .socials .icon-mail:hover .fa-stack-1x {
+        color: #000; }
 
 .comments {
   border-right: 0;
   border-left: 0;
-  border-top: 0; }
-
-#commentBox .btn-primary {
-  background: #186578 !important; }
-  #commentBox .btn-primary:hover, #commentBox .btn-primary:focus {
-    background: gray !important; }
+  border-top: 0;
+  border-radius: 0; }
 
 #commentBox input:focus, #commentBox textarea:focus {
   border-color: #186578; }

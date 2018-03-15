@@ -5,7 +5,7 @@ $white: #fff;
 $border: 2px solid;
 /*
 Author: Miguel Angarita;
-Version: 0.1.2;
+Version: 0.1.3;
 Theme: Ang Simple Blog
 
 */
@@ -14,6 +14,25 @@ Theme: Ang Simple Blog
 	border-top-left-radius:0.5rem;
 	border-top-right-radius:0.5rem;
 }
+
+.bg-success, .btn-success{
+	background: $green !important;
+}
+.btn-success:hover{
+	background: darken($green, 10%) !important;
+}
+.text-success, .btn-outline-success{
+	color: $green !important;
+}
+.border-success, .btn-outline-success, .btn-success{
+	border-color: $green !important;
+}
+
+.btn-outline-success:hover{
+	background: $green !important;
+	color: #fff !important;
+}
+
 .cont{
 	border: $border;
 }
@@ -48,15 +67,7 @@ nav{
 	}
 }
 
-.jumbotron{
-	.social{
-		.icon-instagram .fa-stack-1x, .icon-youtube .fa-stack-1x{
-			font-size: 2rem;
-		}
 
-	}
-
-}
 
 .brd{
 	border: 1px solid white;
@@ -78,34 +89,45 @@ nav{
 	}
 }
 .pagination{
-
+	
 	.active{
 		.page-link{
 		background-color: $green !important;
+		}
 	}
-}
-
 	.page-link{
 		color: $green;
 	}
 	.page-link:hover{
 		font-weight:bold;
 	}
+	.page-item:first-child .page-link {
+	  border-top-left-radius: 0;
+	  border-bottom-left-radius: 0; }
+
+	.page-item:last-child .page-link {
+	  border-top-right-radius: 0;
+	  border-bottom-right-radius: 0; }
 }
 
 .sidebar{
 	margin-bottom:10px;
 	.list-group-item, .card { background-color: rgba(0, 0, 0, 0) !important;
-			border:0;
+		border:0;
 	 }
 	 .list-group-item{
 	 	color: white !important;
 	 	border-bottom: 1px dotted white;
+	 	border-radius: 0px;
 	 }
 	 .list-group-item:hover{
 	 	background-color:white !important;
 	 	color: $green !important;
 	 	font-weight: bold;
+	 	& .badge-pill{
+	 		color: #fff !important;
+	 		background:$green !important;
+	 	}
 	 }
 
 
@@ -126,128 +148,165 @@ footer{
 	}
 }
 
+.jumbotron{
+	.fa-stack-1x {
+	    color:#000 !important;
+	    font-size: 1.5rem;
+	}
+	.icon-instagram .fa-stack-1x, .icon-youtube .fa-stack-1x{
+		font-size: 2rem;
+	}
+	.icon-facebook, .icon-twitter, .icon-instagram, .icon-youtube{
+		color:#fff !important;
+	}
+	.icon-facebook {
+		&:hover{
+			& .fa-stack-1x {
+			    color:#3b59ff !important;
+			}
+		}	
+	}
+	.icon-twitter {
+		&:hover{
+		    & .fa-stack-1x {
+			    color:#00aced !important;
+			}
+		}
+	}
+	.icon-youtube {
+		&:hover{
+		    & .fa-stack-1x {
+			    color:#f00 !important;
+			}
+		}
+	}
+
+	.icon-instagram {
+		&:hover{
+		    & .fa-stack-1x {
+			    color:#f5f !important;
+			}
+		}
+	}
+}
+
 .socials{
 	font-size: 0.9rem;
 	a{
 		text-decoration: none;
 		padding: 0px !important;
 	}
-	
-}
-.icon-facebook {
-   color:#3b5998;
-   & .fa-stack-1x {
+	.icon-facebook {
+	   color:#3b5998;
+	   & .fa-stack-1x {
+		    color:white;
+		}
+		&:hover{
+			color:#fff;
+			& .fa-stack-1x {
+			    color:#3b5998;
+			}
+		}
+	}
+	.icon-twitter {
+	    color:#00aced;
+	    & .fa-stack-1x {
+		    color:white;
+		}
+		&:hover{
+			color:#fff;
+		    & .fa-stack-1x {
+			    color:#00aced;
+			}
+		}
+	}
+	.icon-youtube {
 	    color:white;
-	}
-	&:hover{
-		color:#fff;
-		& .fa-stack-1x {
-		    color:#3b5998;
-		}
-	}
-}
-.icon-twitter {
-    color:#00aced;
-    & .fa-stack-1x {
-	    color:white;
-	}
-	&:hover{
-		color:#fff;
 	    & .fa-stack-1x {
-		    color:#00aced;
+		    color:red;
+		}
+		&:hover{
+			color:red;
+		    & .fa-stack-1x {
+			    color:#fff;
+			}
 		}
 	}
-}
-.icon-youtube {
-    color:white;
-    & .fa-stack-1x {
-	    color:red;
-	}
-	&:hover{
-		color:red;
-	    & .fa-stack-1x {
-		    color:#fff;
-		}
-	}
-}
-.icon-instagram {
-    color:#fff;
-    & .fa-stack-1x {
-	    color:#000;
-	}
-	&:hover{
-		color:#000;
-	    & .fa-stack-1x {
-		    color:#fff;
-		}
-	}
-}
-
-.icon-googleplus {
-    color:#f00;
-    & .fa-stack-1x {
-	    color:#Fff;
-	}
-	&:hover{
-		color:#fff;
-	    & .fa-stack-1x {
-		    color:#f00;
-		}
-	}
-}
-
-.icon-reddit {
-    color:#F50;
-    & .fa-stack-1x {
-	    color:#Fff;
-	}
-	&:hover{
-		color:#fff;
-	    & .fa-stack-1x {
-		    color:#f50;
-		}
-	}
-}
-
-.icon-linkedin {
-    color:#05F;
-    & .fa-stack-1x {
-	    color:#Fff;
-	}
-	&:hover{
-		color:#fff;
-	    & .fa-stack-1x {
-		    color:#05F;
-		}
-	}
-}
-
-.icon-mail {
-    color:#000;
-    & .fa-stack-1x {
-	    color:#Fff;
-	}
-	&:hover{
-		color:#fff;
+	.icon-instagram {
+	    color:#fff;
 	    & .fa-stack-1x {
 		    color:#000;
 		}
+		&:hover{
+			color:#000;
+		    & .fa-stack-1x {
+			    color:#fff;
+			}
+		}
 	}
+
+	.icon-googleplus {
+	    color:#f00;
+	    & .fa-stack-1x {
+		    color:#Fff;
+		}
+		&:hover{
+			color:#fff;
+		    & .fa-stack-1x {
+			    color:#f00;
+			}
+		}
+	}
+
+	.icon-reddit {
+	    color:#F50;
+	    & .fa-stack-1x {
+		    color:#Fff;
+		}
+		&:hover{
+			color:#fff;
+		    & .fa-stack-1x {
+			    color:#f50;
+			}
+		}
+	}
+
+	.icon-linkedin {
+	    color:#05F;
+	    & .fa-stack-1x {
+		    color:#Fff;
+		}
+		&:hover{
+			color:#fff;
+		    & .fa-stack-1x {
+			    color:#05F;
+			}
+		}
+	}
+
+	.icon-mail {
+	    color:#000;
+	    & .fa-stack-1x {
+		    color:#Fff;
+		}
+		&:hover{
+			color:#fff;
+		    & .fa-stack-1x {
+			    color:#000;
+			}
+		}
+	}
+	
 }
 
 .comments{
 	border-right:0; 
 	border-left:0;
 	border-top:0;
+	border-radius: 0;
 }
 
 #commentBox{
-	.btn-primary{
-		background: $green !important;
-		&:hover,&:focus{
-			background: gray !important;
-		}
-	}
 	input:focus, textarea:focus{
 		border-color:$green;
 	}

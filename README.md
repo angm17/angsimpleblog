@@ -1,7 +1,5 @@
 # Ang Simpleblog
-Simple blog theme made with Bootstrap 4 + FontAwesome 5 and a bit of css. 
-
-It uses a modified version of Bootstrap, I didn't mean to edit the bootstrap sass file, but I was messing around and made some basic changes (new primary color, no border radius by default).
+Simple blog theme made with Bootstrap 4 + FontAwesome 5 SVG and a bit of css.
 
 # Live demo 
 
